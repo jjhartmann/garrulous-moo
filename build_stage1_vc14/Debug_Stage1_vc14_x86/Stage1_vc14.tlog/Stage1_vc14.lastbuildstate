@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+x86 Debug|Win32|d:\Marmalade\Stage1\build_stage1_vc14\|

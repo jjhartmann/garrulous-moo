@@ -1,0 +1,21 @@
+#!/usr/bin/env mkb
+files
+{
+    Stage1.cpp
+}
+
+subprojects
+{
+    iw2d
+}
+
+deployment
+{
+}
+
+
+assets
+{
+	(data)
+	textures
+}

@@ -1,0 +1,2 @@
+^D:\MARMALADE\STAGE1\STAGE1.MKB
+"C:\Marmalade\7.10\s3e\python\python.exe" "C:\Marmalade\7.10\s3e\makefile_builder\mkb.py" "d:/Marmalade/Stage1/Stage1.mkb" "--buildenv=VC14" "--fake-vc-call" "--default-buildenv=vc14" --msvc-project
