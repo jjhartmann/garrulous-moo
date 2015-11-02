@@ -2,13 +2,14 @@
 #include "IwDebug.h"
 #include "Iw2D.h"
 
-
-
 // Main entry point for the application
 int main()
 {
     //Initialize graphics system(s)
     Iw2DInit();
+
+    // Setup the input system
+
 
     // Create an image from file
     CIw2DImage *image = Iw2DCreateImage("textures/gem1.png");
@@ -16,9 +17,9 @@ int main()
     // Loop forever, until the user or the OS performs some action to quit the app
     while (!s3eDeviceCheckQuitRequest())
     {
-       // CLear the drawing surface
+        // CLear the drawing surface
         Iw2DSurfaceClear(0xff000000);
-        
+
         // Draw the image
         Iw2DDrawImage(image, CIwFVec2::g_Zero);
 

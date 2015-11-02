@@ -27,6 +27,8 @@
     </Filter>
     <Filter Include="'Marmalade Studio'\iw2d">
     </Filter>
+    <Filter Include="source">
+    </Filter>
     <Filter Include="'Marmalade Studio'\iwgxfont">
     </Filter>
     <Filter Include="'Marmalade Studio'">
@@ -826,6 +828,9 @@
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/ifaddrs.h">
       <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
     </ClInclude>
+    <ClInclude Include="d:/Marmalade/Stage1/source/input.h">
+      <Filter>source</Filter>
+    </ClInclude>
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/inttypes.h">
       <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
     </ClInclude>
@@ -1254,8 +1259,11 @@
     <ClCompile Include="c:\marmalade\7.10\extensions\pvrtextool\interface\PVRTexTool_interface.cpp">
       <Filter>Extensions\PVRTexTool\interface</Filter>
     </ClCompile>
-    <ClCompile Include="..\Stage1.cpp">
-      <Filter></Filter>
+    <ClCompile Include="..\source\Stage1.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\input.cpp">
+      <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="c:\marmalade\7.10\extensions\s3eamazonads\interface\s3eAmazonAds_interface.cpp">
       <Filter>Extensions\s3eAmazonAds\interface</Filter>

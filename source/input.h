@@ -13,11 +13,17 @@ public:
     Input();
     ~Input();
 
-    // Input touch events
-    void TouchButtonCB(s3ePointerEvent * event);
-    void TouchMotionCB(s3ePointerEvent * event);
-    void MultiTouchButtonCB(s3ePointerEvent * event);
-    void MultiTouchMotionCB(s3ePointerEvent * event);
+    // Update
+    void Update();
+
+    // Reset
+    void Reset();
+
+    // Input touch event callbacks
+    static void TouchButtonCB(s3ePointerEvent * event);
+    static void TouchMotionCB(s3ePointerEvent * event);
+    static void MultiTouchButtonCB(s3ePointerEvent * event);
+    static void MultiTouchMotionCB(s3ePointerEvent * event);
 
 
 
@@ -28,5 +34,6 @@ public:
 
 };
 
+extern Input* g_pInput;
 
 #endif

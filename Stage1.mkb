@@ -1,7 +1,11 @@
 #!/usr/bin/env mkb
 files
 {
+    [source]
+    (source)
     Stage1.cpp
+    input.h
+    input.cpp
 }
 
 subprojects
@@ -16,6 +20,6 @@ deployment
 
 assets
 {
-	(data)
-	textures
+    (data)
+    textures
 }

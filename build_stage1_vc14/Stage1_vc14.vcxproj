@@ -1293,6 +1293,7 @@
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/grp.h" />
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/iconv.h" />
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/ifaddrs.h" />
+    <ClInclude Include="d:/Marmalade/Stage1/source/input.h" />
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/inttypes.h" />
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/sys/ioctl.h" />
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/c++/iomanip.h" />
@@ -1437,7 +1438,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="c:\marmalade\7.10\extensions\pvrtextool\interface\PVRTexTool_interface.cpp" />
-    <ClCompile Include="..\Stage1.cpp" />
+    <ClCompile Include="..\source\Stage1.cpp" />
+    <ClCompile Include="..\source\input.cpp" />
     <ClCompile Include="c:\marmalade\7.10\extensions\s3eamazonads\interface\s3eAmazonAds_interface.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
