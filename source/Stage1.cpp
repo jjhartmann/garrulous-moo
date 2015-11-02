@@ -2,6 +2,7 @@
 #include "IwDebug.h"
 #include "Iw2D.h"
 #include "input.h"
+#include "audio.h"
 
 // Main entry point for the application
 int main()
@@ -12,15 +13,23 @@ int main()
     // Setup the input system
     g_pInput = new Input();
 
+    // Setup Audio System
+    g_pAudio = new Audio();
+
     // Create an image from file
     CIw2DImage *image = Iw2DCreateImage("textures/gem1.png");
     CIwFVec2 image_position = CIwFVec2::g_Zero;
+
+    Audio::PlayMusic("audio/frontend.mp3", true);
 
     // Loop forever, until the user or the OS performs some action to quit the app
     while (!s3eDeviceCheckQuitRequest())
     {
         // Update the input 
         g_pInput->Update();
+
+        // Update Audio
+        g_pAudio->Update();
 
         // CLear the drawing surface
         Iw2DSurfaceClear(0xff000000);
@@ -37,6 +46,9 @@ int main()
 
             // Reset input
             g_pInput->Reset();
+
+            // Play sound
+            g_pAudio->PlaySound("audio/gem_destroyed.wav");
         }
 
         // Show the drawing surface
@@ -47,6 +59,7 @@ int main()
     }
 
     //Terminate modules being used
+    delete g_pAudio;
     delete g_pInput;
     delete image;
     Iw2DTerminate();

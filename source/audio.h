@@ -4,6 +4,7 @@
 
 #include "IwSound.h"
 #include <list>
+#include <map>
 
 class AudioSound
 {
@@ -55,7 +56,9 @@ public:
     void PlaySound(const char* filename);
 
     // VARS..................................
-    std::list<AudioSound*> m_Sounds;
+    std::map<int, AudioSound*> m_Sounds;
 };
+
+extern Audio* g_pAudio;
 
 #endif
