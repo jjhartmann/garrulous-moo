@@ -32,8 +32,8 @@ int main()
         if (!g_pInput->m_Touched && g_pInput->m_PrevTouched)
         {
             // Move image
-            image_position.x = static_cast<float>(g_pInput->m_X);
-            image_position.y = static_cast<float>(g_pInput->m_Y);
+            image_position.x = static_cast<float>(g_pInput->m_X) - image->GetWidth()/2;
+            image_position.y = static_cast<float>(g_pInput->m_Y) - image->GetHeight()/2;
 
             // Reset input
             g_pInput->Reset();

@@ -4,7 +4,7 @@
 # tool during the build process.
 
 config = {}
-cmdline = ['C:/Marmalade/7.10/s3e/makefile_builder/mkb.py', 'd:/Marmalade/Stage1/Stage1.mkb', '--deploy-only', '--hub-data', 'D:/Marmalade/Stage1/project_Stage1/mkb-windows.txt', '--buildenv=VC14']
+cmdline = ['C:/Marmalade/7.10/s3e/makefile_builder/mkb.py', 'd:/Marmalade/Stage1/Stage1.mkb', '--buildenv=VC14', '--fake-vc-call', '--default-buildenv=vc14', '--msvc-project', '--deploy-only']
 mkb = 'd:/Marmalade/Stage1/Stage1.mkb'
 mkf = ['c:\\marmalade\\7.10\\s3e\\s3e-default.mkf', 'c:\\marmalade\\7.10\\extensions\\s3eamazonads\\s3eamazonads.mkf', 'c:\\marmalade\\7.10\\modules\\iwutil\\iwutil.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\libjpeg\\libjpeg.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\libpng\\libpng.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\zlib\\zlib.mkf', 'c:\\marmalade\\7.10\\platform_libs\\android\\amazon-ads-android-sdk\\amazon-ads-android-sdk.mkf', 'c:\\marmalade\\7.10\\platform_libs\\iphone\\amazon-ads-ios-sdk\\amazon-ads-ios-sdk.mkf', 'c:\\marmalade\\7.10\\modules\\iw2d\\iw2d.mkf', 'c:\\marmalade\\7.10\\modules\\iwgx\\iwgx.mkf', 'c:\\marmalade\\7.10\\modules\\iwgl\\iwgl.mkf', 'c:\\marmalade\\7.10\\modules\\iwgeom\\iwgeom.mkf', 'c:\\marmalade\\7.10\\modules\\iwresmanager\\iwresmanager.mkf', 'c:\\marmalade\\7.10\\extensions\\pvrtextool\\pvrtextool.mkf', 'c:\\marmalade\\7.10\\modules\\iwgxfont\\iwgxfont.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\tiniconv\\tiniconv.mkf']
 
