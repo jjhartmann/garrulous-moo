@@ -1,6 +1,7 @@
 #include "s3e.h"
 #include "IwDebug.h"
 #include "Iw2D.h"
+#include "input.h"
 
 // Main entry point for the application
 int main()
@@ -9,19 +10,34 @@ int main()
     Iw2DInit();
 
     // Setup the input system
-
+    g_pInput = new Input();
 
     // Create an image from file
     CIw2DImage *image = Iw2DCreateImage("textures/gem1.png");
+    CIwFVec2 image_position = CIwFVec2::g_Zero;
 
     // Loop forever, until the user or the OS performs some action to quit the app
     while (!s3eDeviceCheckQuitRequest())
     {
+        // Update the input 
+        g_pInput->Update();
+
         // CLear the drawing surface
         Iw2DSurfaceClear(0xff000000);
 
         // Draw the image
-        Iw2DDrawImage(image, CIwFVec2::g_Zero);
+        Iw2DDrawImage(image, image_position);
+
+        // Check for user tap
+        if (!g_pInput->m_Touched && g_pInput->m_PrevTouched)
+        {
+            // Move image
+            image_position.x = static_cast<float>(g_pInput->m_X);
+            image_position.y = static_cast<float>(g_pInput->m_Y);
+
+            // Reset input
+            g_pInput->Reset();
+        }
 
         // Show the drawing surface
         Iw2DSurfaceShow();
@@ -31,6 +47,7 @@ int main()
     }
 
     //Terminate modules being used
+    delete g_pInput;
     delete image;
     Iw2DTerminate();
 
