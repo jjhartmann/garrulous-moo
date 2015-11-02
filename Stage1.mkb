@@ -1,4 +1,10 @@
 #!/usr/bin/env mkb
+
+options
+{
+    module_path="../modules"
+}
+
 files
 {
     [source]
@@ -6,11 +12,17 @@ files
     Stage1.cpp
     input.h
     input.cpp
+
+    audio.h
+    audio.cpp
 }
 
 subprojects
 {
     iw2d
+    MarmaladeExampleResources
+    SoundEngine
+
 }
 
 deployment

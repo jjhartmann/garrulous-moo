@@ -13,5 +13,6 @@
 --config-txt7="c:/marmalade/7.10/modules/iwutil/docs/iwutil.config.txt"
 --config-txt8="c:/marmalade/7.10/s3e/s3e.config.txt"
 --config-txt9="d:/Marmalade/Stage1/data/app.config.txt"
---config-txt10="c:/marmalade/7.10/s3e\s3e.config.txt"
+--config-txt10="d:/marmalade/modules/soundengine/docs/iwsound.config.txt"
+--config-txt11="c:/marmalade/7.10/s3e\s3e.config.txt"
 --s3e-dir=c:/marmalade/7.10/s3e

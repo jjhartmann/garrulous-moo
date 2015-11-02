@@ -55,6 +55,9 @@
 #ifndef IW_MKF_LIBPNG
 #   define IW_MKF_LIBPNG 1
 #endif
+#ifndef IW_MKF_MARMALADEEXAMPLERESOURCES
+#   define IW_MKF_MARMALADEEXAMPLERESOURCES 1
+#endif
 #ifndef IW_MKF_PVRTEXTOOL
 #   define IW_MKF_PVRTEXTOOL 1
 #endif
@@ -63,6 +66,9 @@
 #endif
 #ifndef IW_MKF_S3E_DEFAULT
 #   define IW_MKF_S3E_DEFAULT 1
+#endif
+#ifndef IW_MKF_SOUNDENGINE
+#   define IW_MKF_SOUNDENGINE 1
 #endif
 #ifndef IW_MKF_TINICONV
 #   define IW_MKF_TINICONV 1
