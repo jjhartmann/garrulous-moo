@@ -20,7 +20,8 @@ files
 subprojects
 {
     iw2d
-    MarmaladeExampleResources
+    iw2dscenegraph
+    iw2dscenegraphcore
     SoundEngine
 
 }

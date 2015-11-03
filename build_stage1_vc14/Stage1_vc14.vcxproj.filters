@@ -29,6 +29,8 @@
     </Filter>
     <Filter Include="(SoundEngine)\Docs">
     </Filter>
+    <Filter Include="'Marmalade Studio'\iw2dscenegraph">
+    </Filter>
     <Filter Include="'Marmalade Studio'\iw2d">
     </Filter>
     <Filter Include="source">
@@ -41,6 +43,8 @@
     </Filter>
     <Filter Include="'generated files'">
     </Filter>
+    <Filter Include="'Marmalade Studio'\iw2dscenegraphcore">
+    </Filter>
     <Filter Include="'Marmalade Studio'\iwgl">
     </Filter>
     <Filter Include="'Marmalade System (S3E)'\GL">
@@ -48,8 +52,6 @@
     <Filter Include="'Marmalade Studio'\iwresmanager">
     </Filter>
     <Filter Include="'Marmalade System (S3E)'\GL\GLES 2.0">
-    </Filter>
-    <Filter Include="(MarmaladeExampleResources)">
     </Filter>
     <Filter Include="'Marmalade System (S3E)'\stdc headers">
     </Filter>
@@ -214,6 +216,15 @@
     <None Include="c:/marmalade/7.10/modules/iw2d/docs/iw2d_public.defines.txt">
       <Filter>'Marmalade Studio'\iw2d</Filter>
     </None>
+    <None Include="c:/marmalade/7.10/modules/iw2dscenegraph/docs/iw2dscenegraph.defines.txt">
+      <Filter>'Marmalade Studio'\iw2dscenegraph</Filter>
+    </None>
+    <None Include="c:/marmalade/7.10/modules/iw2dscenegraph/iw2dscenegraph.mkf">
+      <Filter>'Marmalade Studio'\iw2dscenegraph</Filter>
+    </None>
+    <None Include="c:/marmalade/7.10/modules/iw2dscenegraphcore/iw2dscenegraphcore.mkf">
+      <Filter>'Marmalade Studio'\iw2dscenegraphcore</Filter>
+    </None>
     <None Include="c:/marmalade/7.10/modules/iwgeom/docs/iwgeom.config.txt">
       <Filter>'Marmalade Studio'\iwgeom</Filter>
     </None>
@@ -276,9 +287,6 @@
     </None>
     <None Include="c:/marmalade/7.10/s3e/h/std/c++/map">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
-    </None>
-    <None Include="c:/marmalade/7.10/examples/marmaladeexampleresources/marmaladeexampleresources.mkf">
-      <Filter>(MarmaladeExampleResources)</Filter>
     </None>
     <None Include="c:/marmalade/7.10/s3e/h/std/c++/memory">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
@@ -380,6 +388,12 @@
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.10/modules/iw2d/h/Iw2D.h">
       <Filter>'Marmalade Studio'\iw2d</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.10/modules/iw2dscenegraph/h/Iw2DSceneGraph.h">
+      <Filter>'Marmalade Studio'\iw2dscenegraph</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.10/modules/iw2dscenegraphcore/h/Iw2DSceneGraphCore.h">
+      <Filter>'Marmalade Studio'\iw2dscenegraphcore</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.10/modules/iwutil/h/IwAllocator.h">
       <Filter>'Marmalade Studio'\iwutil</Filter>
@@ -1307,6 +1321,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="c:\marmalade\7.10\modules\iw2dscenegraph\source\Iw2DSceneGraph.cpp">
+      <Filter>'Marmalade Studio'\iw2dscenegraph</Filter>
+    </ClCompile>
+    <ClCompile Include="c:\marmalade\7.10\modules\iw2dscenegraphcore\source\Iw2DSceneGraphCore.cpp">
+      <Filter>'Marmalade Studio'\iw2dscenegraphcore</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\modules\soundengine\source\IwResHandlerWAV.cpp">
       <Filter>(SoundEngine)</Filter>
     </ClCompile>

@@ -4,9 +4,9 @@
 # tool during the build process.
 
 config = {}
-cmdline = ['C:/Marmalade/7.10/s3e/makefile_builder/mkb.py', 'd:/Marmalade/Stage1/Stage1.mkb', '--buildenv=VC14', '--fake-vc-call', '--default-buildenv=vc14', '--msvc-project', '--deploy-only']
+cmdline = ['C:/Marmalade/7.10/s3e/makefile_builder/mkb.py', 'd:/Marmalade/Stage1/Stage1.mkb', '--buildenv=VC14', '--fake-vc-call', '--deploy-only']
 mkb = 'd:/Marmalade/Stage1/Stage1.mkb'
-mkf = ['c:\\marmalade\\7.10\\s3e\\s3e-default.mkf', 'c:\\marmalade\\7.10\\extensions\\s3eamazonads\\s3eamazonads.mkf', 'c:\\marmalade\\7.10\\modules\\iwutil\\iwutil.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\libjpeg\\libjpeg.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\libpng\\libpng.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\zlib\\zlib.mkf', 'c:\\marmalade\\7.10\\platform_libs\\android\\amazon-ads-android-sdk\\amazon-ads-android-sdk.mkf', 'c:\\marmalade\\7.10\\platform_libs\\iphone\\amazon-ads-ios-sdk\\amazon-ads-ios-sdk.mkf', 'c:\\marmalade\\7.10\\modules\\iw2d\\iw2d.mkf', 'c:\\marmalade\\7.10\\modules\\iwgx\\iwgx.mkf', 'c:\\marmalade\\7.10\\modules\\iwgl\\iwgl.mkf', 'c:\\marmalade\\7.10\\modules\\iwgeom\\iwgeom.mkf', 'c:\\marmalade\\7.10\\modules\\iwresmanager\\iwresmanager.mkf', 'c:\\marmalade\\7.10\\extensions\\pvrtextool\\pvrtextool.mkf', 'c:\\marmalade\\7.10\\modules\\iwgxfont\\iwgxfont.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\tiniconv\\tiniconv.mkf', 'c:\\marmalade\\7.10\\examples\\marmaladeexampleresources\\marmaladeexampleresources.mkf', 'd:\\marmalade\\modules\\soundengine\\soundengine.mkf']
+mkf = ['c:\\marmalade\\7.10\\s3e\\s3e-default.mkf', 'c:\\marmalade\\7.10\\extensions\\s3eamazonads\\s3eamazonads.mkf', 'c:\\marmalade\\7.10\\modules\\iwutil\\iwutil.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\libjpeg\\libjpeg.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\libpng\\libpng.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\zlib\\zlib.mkf', 'c:\\marmalade\\7.10\\platform_libs\\android\\amazon-ads-android-sdk\\amazon-ads-android-sdk.mkf', 'c:\\marmalade\\7.10\\platform_libs\\iphone\\amazon-ads-ios-sdk\\amazon-ads-ios-sdk.mkf', 'c:\\marmalade\\7.10\\modules\\iw2d\\iw2d.mkf', 'c:\\marmalade\\7.10\\modules\\iwgx\\iwgx.mkf', 'c:\\marmalade\\7.10\\modules\\iwgl\\iwgl.mkf', 'c:\\marmalade\\7.10\\modules\\iwgeom\\iwgeom.mkf', 'c:\\marmalade\\7.10\\modules\\iwresmanager\\iwresmanager.mkf', 'c:\\marmalade\\7.10\\extensions\\pvrtextool\\pvrtextool.mkf', 'c:\\marmalade\\7.10\\modules\\iwgxfont\\iwgxfont.mkf', 'c:\\marmalade\\7.10\\modules\\third_party\\tiniconv\\tiniconv.mkf', 'c:\\marmalade\\7.10\\modules\\iw2dscenegraph\\iw2dscenegraph.mkf', 'c:\\marmalade\\7.10\\modules\\iw2dscenegraphcore\\iw2dscenegraphcore.mkf', 'd:\\marmalade\\modules\\soundengine\\soundengine.mkf']
 
 class DeployConfig(object):
     pass
@@ -52,14 +52,12 @@ class DefaultConfig(DeployConfig):
     win10_extra_res = []
     ws8_ext_native_dll = []
     android_external_assets = []
-    splashscreen = 'c:/marmalade/7.10/examples/marmaladeexampleresources/resources/splashscreens'
     blackberry_extra_descriptor = []
     android_ext_target_sdk_version = [17]
     android_extra_manifest = []
     wp81_ext_sdk_ref = []
     iphone_link_libdirs = []
     wp81_ext_device_capabilities = []
-    icon = 'c:/marmalade/7.10/examples/marmaladeexampleresources/resources/icons'
     win10_ext_capabilities = []
     linux_ext_lib = []
     android_ext_min_sdk_version = [4]
@@ -77,7 +75,6 @@ class DefaultConfig(DeployConfig):
     win10_ext_managed_dll = []
     iphone_extra_plist = []
     ws81_ext_sdk_manifest_part = []
-    iphone_launch_dir = 'c:/marmalade/7.10/examples/marmaladeexampleresources/resources/splashscreens/ios'
     ws81_ext_device_capabilities = []
     android_supports_gl_texture = []
     ws8_ext_sdk_ref = []
