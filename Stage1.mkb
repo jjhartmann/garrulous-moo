@@ -15,6 +15,15 @@ files
 
     audio.h
     audio.cpp
+
+    scene.h
+    scene.cpp
+    mainMenu.h
+    mainMenu.cpp
+    pauseMenu.h
+    pauseMenu.cpp
+    resources.h
+    resources.cpp
 }
 
 subprojects

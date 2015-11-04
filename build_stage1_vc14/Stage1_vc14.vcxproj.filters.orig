@@ -962,6 +962,9 @@
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/locale.h">
       <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
     </ClInclude>
+    <ClInclude Include="d:/Marmalade/Stage1/source/mainMenu.h">
+      <Filter>source</Filter>
+    </ClInclude>
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/malloc.h">
       <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
     </ClInclude>
@@ -998,6 +1001,9 @@
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/sys/param.h">
       <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
     </ClInclude>
+    <ClInclude Include="d:/Marmalade/Stage1/source/pauseMenu.h">
+      <Filter>source</Filter>
+    </ClInclude>
     <ClInclude Include="c:/marmalade/7.10/modules/third_party/libpng/h/png.h">
       <Filter>(libpng)\h</Filter>
     </ClInclude>
@@ -1027,6 +1033,9 @@
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/sys/resource.h">
       <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="d:/Marmalade/Stage1/source/resources.h">
+      <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/c++/rlocks.h">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
@@ -1168,6 +1177,9 @@
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.10/s3e/h/ext/s3edebugHeap.h">
       <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="d:/Marmalade/Stage1/source/scene.h">
+      <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/sched.h">
       <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
@@ -1369,8 +1381,20 @@
     <ClCompile Include="..\source\input.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\mainMenu.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\pauseMenu.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\resources.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
     <ClCompile Include="c:\marmalade\7.10\extensions\s3eamazonads\interface\s3eAmazonAds_interface.cpp">
       <Filter>Extensions\s3eAmazonAds\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scene.cpp">
+      <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
