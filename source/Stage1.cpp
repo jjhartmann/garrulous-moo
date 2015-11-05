@@ -3,6 +3,9 @@
 #include "Iw2D.h"
 #include "input.h"
 #include "audio.h"
+#include "scene.h"
+
+#define FRAME_TIME  (1.0f / 30.0f)
 
 // Main entry point for the application
 int main()
@@ -15,6 +18,9 @@ int main()
 
     // Setup Audio System
     g_pAudio = new Audio();
+
+    // Setup the SceneManager
+    g_pSceneManager = new SceneManager();
 
     // Create an image from file
     CIw2DImage *image = Iw2DCreateImage("textures/gem1.png");
@@ -31,8 +37,14 @@ int main()
         // Update Audio
         g_pAudio->Update();
 
+        // Update Scene manager
+        g_pSceneManager->Update(FRAME_TIME);
+
         // CLear the drawing surface
         Iw2DSurfaceClear(0xff000000);
+
+        // Render the Scenes
+        g_pSceneManager->Render();
 
         // Draw the image
         Iw2DDrawImage(image, image_position);
@@ -59,6 +71,7 @@ int main()
     }
 
     //Terminate modules being used
+    delete g_pSceneManager;
     delete g_pAudio;
     delete g_pInput;
     delete image;

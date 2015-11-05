@@ -19,7 +19,7 @@ public:
     Scene();
     virtual ~Scene();
     virtual void Init();
-    virtual void Update();
+    virtual void Update(float deltaTime = 0.0f, float alphaMul = 1.0f);
     virtual void Render();
 
     bool IsActive() const;
@@ -53,8 +53,8 @@ public:
     ~SceneManager();
 
     Scene* GetCurrent();
-    void SwtichTo();        // Swtich to a scene
-    void Update();          // Update all scenes managed by the manager
+    void SwtichTo(Scene *scene);        // Swtich to a scene
+    void Update(float deltatime = 0.0f);          // Update all scenes managed by the manager
     void Render();          // Render all scenes managed
     void Add(Scene *scene);             // Add scene to manager
     void Remove(Scene *scene);          // Remove scene from manager

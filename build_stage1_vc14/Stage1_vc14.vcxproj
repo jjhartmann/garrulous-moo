@@ -1296,6 +1296,7 @@
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/float.h" />
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/fnmatch.h" />
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/c++/fstream.h" />
+    <ClInclude Include="d:/Marmalade/Stage1/source/game.h" />
     <ClInclude Include="c:/marmalade/7.10/s3e/h/std/getopt.h" />
     <ClInclude Include="c:/marmalade/7.10/s3e/h/GLES/gl.h" />
     <ClInclude Include="c:/marmalade/7.10/s3e/h/GLES2/gl2.h" />
@@ -1475,6 +1476,7 @@
     <ClCompile Include="c:\marmalade\7.10\extensions\pvrtextool\interface\PVRTexTool_interface.cpp" />
     <ClCompile Include="..\source\Stage1.cpp" />
     <ClCompile Include="..\source\audio.cpp" />
+    <ClCompile Include="..\source\game.cpp" />
     <ClCompile Include="..\source\input.cpp" />
     <ClCompile Include="..\source\mainMenu.cpp" />
     <ClCompile Include="..\source\pauseMenu.cpp" />
