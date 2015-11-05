@@ -15,7 +15,15 @@ public:
     ~PauseMenu();
 
 
+    //GET SET
+    CSprite* GetNewGameButton();
+    CSprite* GetContinueGameButton();
 
+
+    //Init
+    void Init();
+    void Update(float deltatime = 0.0f, float alphaM = 1.0f);
+    void Render();
 
 protected:
     CSprite *continueGameButton;
