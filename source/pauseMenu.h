@@ -26,8 +26,8 @@ public:
     void Render();
 
 protected:
-    CSprite *continueGameButton;
-    CSprite *newGameButton;
+    CSprite *m_ContinueGameButton;
+    CSprite *m_NewGameButton;
 
 private:
 };

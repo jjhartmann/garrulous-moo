@@ -1,13 +1,21 @@
 #include "pauseMenu.h"
 
-CSprite * PauseMenu::GetNewGameButton()
+PauseMenu::PauseMenu()
 {
-    return nullptr;
 }
 
-CSprite * PauseMenu::GetContinueGameButton()
+PauseMenu::~PauseMenu()
 {
-    return nullptr;
+}
+
+CSprite* PauseMenu::GetNewGameButton()
+{
+    return m_NewGameButton;
+}
+
+CSprite* PauseMenu::GetContinueGameButton()
+{
+    return m_ContinueGameButton;
 }
 
 void PauseMenu::Init()

@@ -4,7 +4,7 @@
 #if !defined(STAGE_SCENE_H)
 #define STAGE_SCENE_H
 
-#include <list>
+#include <map>
 #include "Iw2dSceneGraph.h"
 
 using namespace Iw2DSceneGraph;
@@ -41,5 +41,33 @@ private:
 
 
 };
+
+
+//////////////////////////////////////////////////////////////////////////
+// SceneManager Class
+
+class SceneManager
+{
+public:
+    SceneManager();
+    ~SceneManager();
+
+    Scene* GetCurrent();
+    void SwtichTo();        // Swtich to a scene
+    void Update();          // Update all scenes managed by the manager
+    void Render();          // Render all scenes managed
+    void Add(Scene *scene);             // Add scene to manager
+    void Remove(Scene *scene);          // Remove scene from manager
+    Scene* Find(const char* name);          // Search for a scene by name
+
+protected:
+    Scene *m_Current;   // currently active scene
+    Scene *m_Next;      // Next Scene that is being activated
+    std::map<int, Scene*> m_Scenes; //Scene list
+
+private:
+};
+
+extern SceneManager* g_pSceneManager;
 
 #endif
